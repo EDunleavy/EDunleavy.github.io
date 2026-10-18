@@ -14,3 +14,4 @@
 @media(max-width:720px){.highlights{grid-template-columns:1fr}.resume-top{flex-direction:column;align-items:flex-start;gap:0}}
 @media print{.highlights{display:none}.resume{padding:0!important}.resume-name{font-size:18pt!important}.resume-entry{break-inside:avoid}.skill-tags span{border:0;padding:0 8px 0 0;background:transparent}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+.hero-aside .profile-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:50%}
