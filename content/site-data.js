@@ -16,7 +16,7 @@ window.SITE_DATA = {
       "id": "obd-2-port-dashboard",
       "title": "OBD 2 Port Dashboard",
       "category": "Automotive",
-      "status": "Details coming soon",
+      "status": "Work in progress",
       "summary": "Project details coming soon.",
       "details": "Project description, features, and build notes will be added here.",
       "progress": null,
@@ -27,7 +27,7 @@ window.SITE_DATA = {
       "id": "loan-payment-calculator",
       "title": "Loan Payment & Extra-Payment Calculator",
       "category": "Finance · Excel",
-      "status": "Built · Evolving",
+      "status": "Completed",
       "summary": "An interactive Excel loan amortization model that compares payment schedules and shows the impact of additional principal payments.",
       "details": "I developed an interactive Excel loan amortization calculator to calculate monthly payments, total interest, and repayment schedules. Adjustable extra-payment scenarios show how additional principal payments can reduce interest and accelerate payoff. I plan to use this project log to document further enhancements, examples, and lessons learned.",
       "progress": null,
@@ -53,17 +53,6 @@ window.SITE_DATA = {
       "summary": "A desktop widget I built from scratch to show time and weather for a selected location.",
       "details": "A custom desktop widget that displays the current time and weather for the location it is configured to show. This page will eventually include screenshots, implementation details, and lessons learned.",
       "progress": 100,
-      "updated": "",
-      "updates": []
-    },
-    {
-      "id": "3d-printing-designs",
-      "title": "3D Printing & Practical Designs",
-      "category": "Design · Making",
-      "status": "In progress",
-      "summary": "An ongoing collection of things I design and 3D print, often inspired by everyday problems.",
-      "details": "I enjoy designing new objects and using my 3D printer to turn ideas into physical things. I will use this space to share prototypes, finished prints, and what I learn along the way.",
-      "progress": null,
       "updated": "",
       "updates": []
     }
