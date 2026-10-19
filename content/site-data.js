@@ -50,7 +50,7 @@ window.SITE_DATA = {
       "title": "Desktop Time & Weather Widget",
       "category": "ESP32 · Animated desktop display",
       "status": "Completed",
-      "summary": "An ESP32 desktop display combining an animated Sisyphus world with live time, weather, and a journey that persists across power cycles.",
+      "summary": "A tiny ESP32 world where Sisyphus climbs through live weather, time, and an ever-changing journey.",
       "details": "",
       "progress": 100,
       "updated": "",
@@ -58,10 +58,20 @@ window.SITE_DATA = {
       "article": {
         "title": "Building a Tiny, Endless Journey with an ESP32",
         "paragraphs": [
-          "This project started as a simple desktop display, but it gradually became something much more personal: a tiny animated world built around the story of Sisyphus. Using an ESP32 and a 1.54-inch ST7789 color display, we created a continuous animation of a detailed character pushing a boulder up an endlessly moving mountain.",
+          "An ESP32 and a 1.54-inch ST7789 display turn a desktop clock into a living scene: Sisyphus pushes his boulder onward while time, weather, and the night sky follow the real world."
+        ]
+      },
+      "presentation": {
+        "photos": [],
+        "source": null,
+        "guide": null,
+        "philosophy": [
+          "At the bottom of the display is the line, **“one can imagine Sisyphus as happy.”** It captures the idea behind the entire build: an endless task can still contain progress, beauty, companionship, and meaning.",
+          "The climb repeats, but the journey leaves a mark. Lifetime mileage survives power loss, and the boulder changes as the miles accumulate. Weather brings variety; the mallard brings companionship and a moment of rest. Together, those small changes give an endless task a sense of progress."
+        ],
+        "features": [
           "The display connects to Wi-Fi to show the current time, outside temperature, real weather conditions, sunrise and sunset, and the active phase of the moon. The environment changes with the real world, including rain, lightning, snow, fog, moving clouds, twinkling stars, and occasional shooting stars. A mallard sometimes flies into the scene, lands on the boulder, and gives Sisyphus a short break before his climb continues.",
-          "The project also keeps track of the total distance Sisyphus has traveled at a simulated walking speed of 3.2 mph. His lifetime mileage is saved even when the ESP32 loses power. As the miles accumulate, the boulder slowly develops scratches, becomes smoother, reveals bronze veins, and eventually transforms through bronze, polished silver, glowing silver, gold-veined silver, and finally permanent gold. Major milestones are marked with flashes, sparkles, a pause in the journey, and the mallard circling overhead.",
-          "At the bottom of the display is the line, **“one can imagine Sisyphus as happy.”** It captures the idea behind the entire build: an endless task can still contain progress, beauty, companionship, and meaning."
+          "The project also keeps track of the total distance Sisyphus has traveled at a simulated walking speed of 3.2 mph. His lifetime mileage is saved even when the ESP32 loses power. As the miles accumulate, the boulder slowly develops scratches, becomes smoother, reveals bronze veins, and eventually transforms through bronze, polished silver, glowing silver, gold-veined silver, and finally permanent gold. Major milestones are marked with flashes, sparkles, a pause in the journey, and the mallard circling overhead."
         ]
       }
     }
