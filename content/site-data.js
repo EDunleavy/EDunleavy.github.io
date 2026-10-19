@@ -13,6 +13,17 @@ window.SITE_DATA = {
   },
   "projects": [
     {
+      "id": "obd-2-port-dashboard",
+      "title": "OBD 2 Port Dashboard",
+      "category": "Automotive",
+      "status": "Details coming soon",
+      "summary": "Project details coming soon.",
+      "details": "Project description, features, and build notes will be added here.",
+      "progress": null,
+      "updated": "",
+      "updates": []
+    },
+    {
       "id": "loan-payment-calculator",
       "title": "Loan Payment & Extra-Payment Calculator",
       "category": "Finance · Excel",
