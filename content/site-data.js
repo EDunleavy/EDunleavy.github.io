@@ -63,8 +63,14 @@ window.SITE_DATA = {
       },
       "presentation": {
         "photos": [],
-        "source": null,
-        "guide": null,
+        "source": {
+          "url": "downloads/SisyphusDeskDisplay.zip",
+          "label": "Download Arduino project (ZIP)"
+        },
+        "guide": {
+          "url": "docs/Sisyphus_Desk_Display_Build_Manual.pdf",
+          "label": "Download build manual (PDF)"
+        },
         "philosophy": [
           "This project began as a compact desk display built from an ESP32 and a 1.54-inch, 240-by-240-pixel ST7789 color screen. The original idea was simply to create a small object that could display messages and change them over time without remaining connected to a computer. As the project developed, however, it became something much more personal and ambitious. Instead of behaving like a miniature information dashboard, the display became a living scene of Sisyphus pushing his boulder endlessly up a mountain. The character remains near the center of the screen while the mountain moves beneath him, creating the illusion that he is constantly climbing through an environment that never truly ends. The finished concept combines a clock, weather display, moon-phase indicator, procedural animation, persistent mileage counter, and several personal details into one small desktop companion.",
           "The hardware is intentionally straightforward. An ESP32-WROOM-32 development board provides the processing power and built-in Wi-Fi needed to run the display and retrieve live information. It is connected to the ST7789 screen through SPI, using GPIO 18 for the clock signal, GPIO 23 for display data, GPIO 17 for reset, GPIO 16 for data and command selection, GPIO 5 for chip select, and GPIO 25 for backlight control. The screen is powered from the ESP32’s 3.3-volt and ground connections. Everything is programmed through the Arduino IDE using the ESP32 board package and libraries including Adafruit GFX, Adafruit ST7789, ArduinoJson, and WiFiManager. WiFiManager allows the device to create a temporary setup network called DeskDisplay-Setup, making it possible to connect the display to a new wireless network without modifying or re-uploading its code.",
@@ -80,7 +86,11 @@ window.SITE_DATA = {
           "The display connects to Wi-Fi to show the current time, outside temperature, real weather conditions, sunrise and sunset, and the active phase of the moon. The environment changes with the real world, including rain, lightning, snow, fog, moving clouds, twinkling stars, and occasional shooting stars. A mallard sometimes flies into the scene, lands on the boulder, and gives Sisyphus a short break before his climb continues.",
           "The project also keeps track of the total distance Sisyphus has traveled at a simulated walking speed of 3.2 mph. His lifetime mileage is saved even when the ESP32 loses power. As the miles accumulate, the boulder slowly develops scratches, becomes smoother, reveals bronze veins, and eventually transforms through bronze, polished silver, glowing silver, gold-veined silver, and finally permanent gold. Major milestones are marked with flashes, sparkles, a pause in the journey, and the mallard circling overhead."
         ],
-        "philosophyTitle": "One Can Imagine Sisyphus Happy"
+        "philosophyTitle": "One Can Imagine Sisyphus Happy",
+        "wiring": {
+          "src": "assets/sisyphus-wiring-diagram.jpeg",
+          "caption": "Hand-drawn ESP32 to ST7789 wiring diagram. Open the original image for a closer look; the manual includes a labeled pin table."
+        }
       }
     }
   ],
