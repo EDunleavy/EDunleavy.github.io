@@ -96,68 +96,74 @@ window.SITE_DATA = {
   ],
   "posts": [],
   "resume": {
-    "summary": "University of Oklahoma finance student with internship experience in sales, customer outreach, business operations, technical field testing, and manufacturing. I bring a practical, hands-on approach to research, data analysis, problem-solving, and working across teams.",
+    "name": "Eric Dunleavy",
+    "summary": "Sales-driven intern with experience in customer outreach, CRM, research, and fast-paced operations. Known for communication, problem-solving, and adaptability, with a Finance BBA background and hands-on support across sales, service, and field testing.",
     "education": [
       {
-        "school": "University of Oklahoma · Norman, OK",
-        "credential": "Bachelor of Business Administration (BBA), Finance",
+        "school": "University of Oklahoma, Norman, OK",
+        "credential": "BBA | Finance",
         "period": "Expected May 2027",
-        "details": "GPA: 3.35 · Relevant coursework: Managerial Accounting, Corporate Finance · Sooner Racing Team"
+        "details": "Relevant Coursework: Managerial Accounting & Corporate Finance · Professional Development: Solid Works FEA and CFD · GPA: 3.35 · Extracurricular Activities: Sooner Racing Team"
       }
     ],
     "experience": [
       {
         "role": "Sales Intern",
-        "organization": "Ferguson · Nashville, TN",
-        "period": "May – August 2026",
+        "organization": "Ferguson | Nashville, TN",
+        "period": "May 2026 to Aug 2026",
         "bullets": [
-          "Rotated through warehouse operations, inside sales, and customer service to learn business operations across departments.",
-          "Supported customer outreach, phone calls, and daily inside sales activities, strengthening communication and relationship-management skills.",
-          "Worked with cross-functional teams to address operational challenges and resolve customer concerns."
+          "Gained hands-on experience across multiple departments, including warehouse operations, inside sales, and customer service, developing a well-rounded understanding of business operations.",
+          "Assisted the inside sales team with customer outreach, phone calls, and daily sales activities while building strong communication and relationship-management skills.",
+          "Collaborated with team members across departments to identify operational challenges, resolve customer concerns, and develop creative, effective solutions.",
+          "Adapted to various responsibilities in a fast-paced environment, demonstrating flexibility, initiative, and strong problem-solving abilities."
         ]
       },
       {
         "role": "Inland Oil Rig Intern",
-        "organization": "Turbo Drill Industries · Hobbs, NM",
-        "period": "May – August 2024",
+        "organization": "Turbo Drill Industries | Hobbs, NM",
+        "period": "May 2024 to Aug 2024",
         "bullets": [
-          "Conducted field testing of an experimental product on an active oil rig, evaluating real-world performance and reliability.",
-          "Collected and analyzed field-test data to identify potential issues and support product improvements.",
-          "Troubleshot technical issues on-site and collaborated on solutions to reduce testing interruptions."
+          "Conducted field testing of an experimental product in an active oil rig environment, evaluating performance, reliability, and operational effectiveness under real-world conditions.",
+          "Collected, reviewed, and analyzed testing data to assess product performance, identify potential issues, and support ongoing improvements.",
+          "Diagnosed technical challenges and implemented immediate on-site solutions to minimize downtime and maintain testing operations.",
+          "Collaborated with team members to troubleshoot unexpected issues, develop innovative solutions, and adapt testing procedures in a fast-paced, high-pressure environment."
         ]
       },
       {
         "role": "Shop Intern",
-        "organization": "Turbo Drill Industries · Conroe, TX",
-        "period": "May – August 2023",
+        "organization": "Turbo Drill Industries | Conroe, TX",
+        "period": "May 2023 to Aug 2023",
         "bullets": [
-          "Assisted with drill manufacturing and assembly while learning production processes, equipment, and quality standards.",
-          "Gained hands-on exposure to heavy machinery and CNC equipment, precision manufacturing, and workplace safety.",
-          "Worked with technicians on production challenges and shadowed management in planning and operations."
+          "Gained hands-on experience in various stages of drill manufacturing and assembly, developing an understanding of production processes, equipment, and quality standards.",
+          "Learned to operate heavy machinery and CNC equipment, gaining practical knowledge of machining techniques, precision manufacturing, and workplace safety.",
+          "Worked alongside experienced technicians to understand manufacturing procedures, troubleshoot production challenges, and improve operational efficiency.",
+          "Shadowed management to gain insight into business operations, production planning, resource allocation, and decision-making processes."
         ]
       }
     ],
     "skills": [
-      "Customer outreach & relationship management",
-      "CRM",
-      "Research & data analysis",
-      "Microsoft Excel",
-      "Microsoft PowerPoint",
-      "Cross-functional collaboration",
-      "Technical troubleshooting",
-      "Financial modeling"
+      "Sales strategy",
+      "Customer relationship management (CRM)",
+      "Research",
+      "MS PowerPoint"
     ],
     "certifications": [
-      "Microsoft Excel Training and FMI Certification (2025)",
-      "OSHA Certified (2023)",
-      "CPR Certified (2022)"
+      "Microsoft Excel Training and FMI Certification - 2025",
+      "OSHA Certified - 2023",
+      "CPR certified - 2022"
     ],
     "additional": [
       "Sooner Racing Team",
-      "Professional development: SolidWorks FEA and CFD"
+      "Professional development: Solid Works FEA and CFD"
+    ],
+    "interests": [
+      "Cooking",
+      "DIY and Home Improvement",
+      "Avid Reader",
+      "Volunteering"
     ],
     "projects": [
-      "Interactive Excel Loan Amortization Calculator — monthly payments, total interest, repayment schedules, and extra-payment scenarios"
+      "Developed an interactive Excel-based loan amortization calculator that calculates monthly payments, total interest costs, and repayment schedules. Incorporated adjustable payment options to demonstrate how increased payments can reduce total interest expenses and accelerate loan payoff, applying financial modeling and analytical skills to evaluate different repayment strategies."
     ]
   }
 };
