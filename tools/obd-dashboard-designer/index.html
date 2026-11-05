@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Design and export layouts for an ESP32 OBD-II digital dashboard.">
+  <title>OBD Digital Dash Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slot-layout.css">
+</head>
+<body>
+  <nav class="site-return" aria-label="Website navigation"><a href="../../#/">ED. · Home</a><a href="../../#/projects">Projects</a><a href="../../#/projects/obd-2-port-dashboard">View Project Details</a></nav>
+  <header class="topbar">
+    <div>
+      <span class="eyebrow">ESP32 · OBD-II</span>
+      <h1>Digital Dash Designer</h1>
+    </div>
+    <div class="download-area"><div class="top-actions">
+      <button id="saveProfile" class="ghost">Save profile</button>
+      <button id="exportJson" class="ghost">Export JSON</button>
+      <button id="exportCpp" class="primary">Download complete ESP32 sketch</button>
+    </div><p class="export-notice">Generated code is intended for the ESP32 OBD dashboard receiver. Verify the selected board and libraries in Arduino IDE before uploading.</p></div>
+  </header>
+
+  <main class="workspace">
+    <aside class="panel controls">
+      <section>
+        <div class="section-title"><span>01</span><h2>Profile</h2></div>
+        <label>Name<input id="profileName" value="My OBD Dashboard" maxlength="40"></label>
+        <div class="preset-grid">
+          <button data-preset="daily">Daily</button><button data-preset="performance">Performance</button>
+          <button data-preset="towing">Towing</button><button data-preset="diagnostic">Diagnostic</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title"><span>02</span><h2>Display</h2></div>
+        <div class="field-row">
+          <label>Visible slots<select id="slotCount"><option value="4">4 slots</option><option value="6" selected>6 slots</option><option value="8">8 slots</option></select></label>
+          <label>Layout<select id="layout"><option value="grid">Tile Grid</option><option value="bars">Horizontal Bars</option><option value="hero">Hero Layout</option></select></label>
+        </div>
+        <div class="field-row">
+          <label>Decimals<select id="decimals"><option value="auto">Auto</option><option>0</option><option>1</option><option>2</option></select></label>
+          <label>Sensor catalog<input value="All supported OBD sensors" disabled></label>
+        </div>
+        <label>Brightness <output id="brightnessOut">80%</output><input id="brightness" type="range" min="10" max="100" value="80"></label>
+        <div class="color-grid">
+          <label>Background<input id="background" type="color" value="#d2d0c8"></label>
+          <label>Labels<input id="textColor" type="color" value="#694f12"></label>
+          <label>Values<input id="valueColor" type="color" value="#d79c18"></label>
+          <label>Warning<input id="warningColor" type="color" value="#ef3d32"></label>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title"><span>03</span><h2>Units</h2></div>
+        <div class="field-row">
+          <label>Temperature<select id="tempUnit"><option value="F">°F</option><option value="C">°C</option></select></label>
+          <label>Speed<select id="speedUnit"><option value="MPH">MPH</option><option value="KMH">km/h</option></select></label>
+        </div>
+        <div class="field-row">
+          <label>Pressure<select id="pressureUnit"><option value="KPA">kPa</option><option value="PSI">PSI</option><option value="BAR">bar</option></select></label>
+          <label>Airflow<select id="airflowUnit"><option value="LBMIN">lb/min</option><option value="GS">g/s</option></select></label>
+        </div>
+      </section>
+    </aside>
+
+    <section class="stage-wrap">
+      <div class="stage-toolbar">
+        <div><span class="live-dot"></span>LIVE SIMULATION</div>
+        <div><button id="warningTest" class="tiny">Test warnings</button><button id="resetDesign" class="tiny">Reset</button></div>
+      </div>
+      <div class="device-shell">
+        <div class="device-label">ST7796 · 480 × 320</div>
+        <div id="dashboard" class="dashboard grid" aria-label="Dashboard preview"></div>
+      </div>
+      <p class="hint">Select a tile to edit it. Drag tiles to reorder them, or use the Move buttons below.</p>
+    </section>
+
+    <aside class="panel inspector">
+      <section>
+        <div class="section-title"><span>04</span><h2>Selected tile</h2></div>
+        <p id="tileNumber" class="selection-tag">SLOT 1</p><div class="reorder-actions"><button id="moveEarlier" type="button">Move earlier</button><button id="moveLater" type="button">Move later</button></div>
+        <label>Sensor<select id="sensorSelect"></select></label>
+        <label>Widget style<select id="widgetStyle"><option value="number">Large number</option><option value="bar">Fill bar</option><option value="compact">Compact</option></select></label>
+        <div class="toggle-line"><label for="showUnit">Show unit</label><input id="showUnit" type="checkbox" checked></div>
+        <div class="toggle-line"><label for="logSensor">Log to SD card</label><input id="logSensor" type="checkbox" checked></div>
+      </section>
+      <section>
+        <div class="section-title"><span>05</span><h2>Warning</h2></div>
+        <div class="toggle-line"><label for="warningEnabled">Warning enabled</label><input id="warningEnabled" type="checkbox" checked></div>
+        <div class="field-row">
+          <label>Condition<select id="warningCondition"><option value="above">Above</option><option value="below">Below</option></select></label>
+          <label>Threshold<input id="warningThreshold" type="number" step="0.1" value="300"></label>
+        </div>
+        <label>Warning message<input id="warningMessage" maxlength="26" value="ENGINE OVERHEAT"></label>
+      </section>
+      <section class="summary">
+        <div class="section-title"><span>06</span><h2>Build summary</h2></div>
+        <dl><div><dt>Active slots</dt><dd id="activeCount">6</dd></div><div><dt>Logged sensors</dt><dd id="loggedCount">6</dd></div><div><dt>Warnings</dt><dd id="warningCount">6</dd></div></dl>
+      </section>
+    </aside>
+  </main>
+
+  <div id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.dashboard.bars {
+  grid-template-rows: repeat(var(--slot-count, 6), 1fr);
+}
+
+.dashboard[data-slots="8"] .tile-value {
+  font-size: clamp(18px, 3vw, 34px);
+}

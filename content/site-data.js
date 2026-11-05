@@ -14,14 +14,15 @@ window.SITE_DATA = {
   "projects": [
     {
       "id": "obd-2-port-dashboard",
-      "title": "OBD 2 Port Dashboard",
-      "category": "Automotive",
+      "title": "ESP32 OBD-II Digital Dashboard",
+      "category": "Automotive · ESP32",
       "status": "Work in progress",
-      "summary": "Project details coming soon.",
-      "details": "Project description, features, and build notes will be added here.",
+      "summary": "A wireless ESP32 automotive dashboard with configurable 4, 6 or 8-slot layouts, live OBD-II data, warning monitoring, SD logging, ESP-NOW communication and a browser-based dashboard designer.",
+      "details": "Use the interactive Dashboard Designer to arrange sensors, customize the display, preview simulated data, and export a JSON profile or complete ESP32 receiver sketch. The dashboard project remains a work in progress.",
       "progress": null,
       "updated": "",
-      "updates": []
+      "updates": [],
+      "tool": "tools/obd-dashboard-designer/"
     },
     {
       "id": "loan-payment-calculator",
