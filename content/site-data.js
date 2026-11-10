@@ -18,7 +18,7 @@ window.SITE_DATA = {
       "category": "Automotive · ESP32",
       "status": "Work in progress",
       "summary": "A wireless ESP32 automotive dashboard with configurable 4, 6 or 8-slot layouts, live OBD-II data, warning monitoring, SD logging, ESP-NOW communication and a browser-based dashboard designer.",
-      "details": "Use the interactive Dashboard Designer to arrange sensors, customize the display, preview simulated data, and export a JSON profile or complete ESP32 receiver sketch. The dashboard project remains a work in progress.",
+      "details": "Use the interactive Dashboard Designer to arrange sensors, customize the display, preview simulated data, and save your selected settings as a PDF. The dashboard project remains a work in progress.",
       "progress": null,
       "updated": "",
       "updates": [],

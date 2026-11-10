@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Design and export layouts for an ESP32 OBD-II digital dashboard.">
   <title>OBD Digital Dash Designer</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=pdf-20261110">
   <link rel="stylesheet" href="slot-layout.css">
 </head>
 <body>
@@ -16,10 +16,9 @@
       <h1>Digital Dash Designer</h1>
     </div>
     <div class="download-area"><div class="top-actions">
-      <button id="saveProfile" class="ghost">Save profile</button>
-      <button id="exportJson" class="ghost">Export JSON</button>
-      <button id="exportCpp" class="primary">Download complete ESP32 sketch</button>
-    </div><p class="export-notice">Generated code is intended for the ESP32 OBD dashboard receiver. Verify the selected board and libraries in Arduino IDE before uploading.</p></div>
+      <button id="saveProfile" class="ghost">Save in browser</button>
+      <button id="exportPdf" class="primary">Save settings as PDF</button>
+    </div><p class="export-notice">Download a PDF of your selected dashboard settings, sensor order, units, logging selections and warnings.</p></div>
   </header>
 
   <main class="workspace">
@@ -103,6 +102,6 @@
   </main>
 
   <div id="toast" role="status"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=pdf-20261110"></script>
 </body>
 </html>
